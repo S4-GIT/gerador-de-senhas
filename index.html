@@ -3,33 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de Senhas | S4 Ferramentas Online</title>
+  <title>Gerador de Senhas - S4 Ferramentas Online</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300..600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Gerador de Senhas</h1>
-    <p>Crie senhas seguras e aleatórias para suas contas online.</p>
-  </header>
-
-  <main>
-    <div class="senha-container">
-      <input type="text" id="senha" readonly>
-      <button id="gerar" onclick="gerarSenha()">Gerar Senha</button>
+  <div id="main-content">
+    <header>
+      <h1>Gerador de Senhas S4</h1>
+      <p>Crie senhas fortes e seguras com um clique!</p>
+    </header>
+  
+    <div>
+      <input type="text" id="password" placeholder="Sua senha vai aparecer aqui..." readonly />
     </div>
-    <div class="configuracoes">
-      <label for="comprimento">Comprimento da senha: </label>
-      <input type="range" id="comprimento" min="8" max="20" value="12">
-      <span id="comprimentoValor">12</span>
-    </div>
-    <a href="index.html" class="voltar">Voltar para a Página Principal</a>
-  </main>
+  
+    <button id="generate-btn">Gerar Senha</button>
+  
+    <footer>
+      <p>S4 Ferramentas Online - Todos os direitos reservados &copy; 2024</p>
+    </footer>
+  </div>
 
-  <footer>
-    <p>S4 Ferramentas Online - Todos os direitos reservados &copy; 2024</p>
-  </footer>
+  <script>
+    // Função para gerar senha aleatória
+    function generatePassword() {
+      const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=<>?/";
+      let password = "";
+      for (let i = 0; i < 12; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      document.getElementById("password").value = password;
+    }
 
-  <script src="script.js"></script>
+    // Aciona a geração da senha ao clicar no botão
+    document.getElementById("generate-btn").addEventListener("click", generatePassword);
+
+    // Animações de entrada
+    window.addEventListener('load', function() {
+      document.body.style.opacity = 1;
+    });
+  </script>
 </body>
 </html>
