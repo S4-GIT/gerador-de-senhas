@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas | S4 Ferramentas Online</title>
+  <link rel="stylesheet" href="gerador-de-senhas-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300..600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Gerador de Senhas</h1>
+    <p>Crie senhas seguras e aleatórias para suas contas online.</p>
+  </header>
+
+  <main>
+    <div class="senha-container">
+      <input type="text" id="senha" readonly>
+      <button id="gerar" onclick="gerarSenha()">Gerar Senha</button>
+    </div>
+    <div class="configuracoes">
+      <label for="comprimento">Comprimento da senha: </label>
+      <input type="range" id="comprimento" min="8" max="20" value="12">
+      <span id="comprimentoValor">12</span>
+    </div>
+    <a href="index.html" class="voltar">Voltar para a Página Principal</a>
+  </main>
+
+  <footer>
+    <p>S4 Ferramentas Online - Todos os direitos reservados &copy; 2024</p>
+  </footer>
+
+  <script src="gerador-de-senhas-script.js"></script>
+</body>
+</html>

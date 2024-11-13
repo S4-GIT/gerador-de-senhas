@@ -1,0 +1,120 @@
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos para o Header */
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* Estilos para o Gerador de Senhas */
+.senha-container {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#senha {
+    font-size: 1.5em;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4081; /* Cor vibrante ao passar o mouse */
+}
+
+/* Configurações de Comprimento */
+.configuracoes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#comprimento {
+    margin: 0 10px;
+    width: 150px;
+}
+
+#comprimentoValor {
+    font-size: 1.2em;
+}
+
+/* Estilos para o Link de Voltar */
+.voltar {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.voltar:hover {
+    color: #ff4081;
+}
+
+/* Estilos para o Rodapé */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9em;
+    text-align: center;
+}
